@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ir-app-bg: #F6F8FB;
+    --ir-surface: #FFFFFF;
+    --ir-sidebar: #12345B;
+    
+    --ir-primary-blue: #1D4ED8;
+    --ir-primary-hover: #1E40AF;
+    --ir-dark-blue: #1E3A5F;
+    --ir-light-blue: #EFF6FF;
+    
+    --ir-text-primary: #172033;
+    --ir-text-secondary: #64748B;
+    --ir-text-muted: #94A3B8;
+    
+    --ir-border: #E2E8F0;
+    
+    --ir-success: #15803D;
+    --ir-success-bg: #F0FDF4;
+    
+    --ir-warning: #B45309;
+    --ir-warning-bg: #FFFBEB;
+    
+    --ir-critical: #B91C1C;
+    --ir-critical-bg: #FEF2F2;
+
+    --ir-info: #2563EB;
+    --ir-info-bg: #EFF6FF;
+  }
+
+  body {
+    background-color: var(--ir-app-bg);
+    color: var(--ir-text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ir-app-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Government badge styles */
+.badge-govt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
